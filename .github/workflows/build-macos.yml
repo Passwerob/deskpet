@@ -29,5 +29,11 @@ jobs:
         with:
           projectPath: .
           args: --target universal-apple-darwin --bundles app,dmg
-          uploadWorkflowArtifacts: true
-          workflowArtifactNamePattern: zhuochong-macos-[platform]-[arch]
+          uploadWorkflowArtifacts: false
+      - name: Upload universal DMG
+        uses: actions/upload-artifact@v4
+        with:
+          name: zhuochong-macos-universal
+          path: src-tauri/target/universal-apple-darwin/release/bundle/dmg/*.dmg
+          if-no-files-found: error
+          compression-level: 0
