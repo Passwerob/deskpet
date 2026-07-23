@@ -1,0 +1,7 @@
+{
+  "id": "dog",
+  "displayName": "dog",
+  "description": "A playful Yorkshire Terrier pet with a smooth roll-over animation.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

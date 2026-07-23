@@ -1,0 +1,19 @@
+{
+  "method": "24-authored-poses+rife-v4.6-dual-matte-alpha",
+  "source_frames": 24,
+  "frames": 139,
+  "columns": 16,
+  "factor": 6,
+  "tta": true,
+  "frame_ms": 34.5324,
+  "duration_ms": 4800.0,
+  "source_continuity": {
+    "mean": 0.079761,
+    "max": 0.153946
+  },
+  "smooth_continuity": {
+    "mean": 0.020191,
+    "max": 0.054904
+  },
+  "asset": "rollOver.webp"
+}

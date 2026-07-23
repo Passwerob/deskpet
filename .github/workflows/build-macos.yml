@@ -1,0 +1,38 @@
+name: Build Zhuochong for macOS
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "zhuochong-v*"
+
+jobs:
+  build-universal-macos:
+    runs-on: macos-14
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin,x86_64-apple-darwin
+      - name: Install frontend dependencies
+        run: npm ci
+      - name: Build universal app and DMG
+        uses: tauri-apps/tauri-action@v1
+        env:
+          APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY || '-' }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        with:
+          projectPath: .
+          args: --target universal-apple-darwin --bundles app,dmg
+          uploadWorkflowArtifacts: true
+          workflowArtifactNamePattern: zhuochong-macos-[platform]-[arch]

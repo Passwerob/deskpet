@@ -1,0 +1,174 @@
+{
+  "method": "rife-v4.6-ncnn-vulkan-dual-matte-alpha",
+  "source": "https://github.com/nihui/rife-ncnn-vulkan",
+  "animations": {
+    "idle": {
+      "source_frames": 6,
+      "frames": 126,
+      "columns": 16,
+      "factor": 32,
+      "interpolated_frames": 192,
+      "target_fps": 60.0,
+      "tta": false,
+      "frame_ms": 16.6667,
+      "loop": true,
+      "duration_ms": 2100.0,
+      "source_continuity": {
+        "mean": 0.02789,
+        "max": 0.057904
+      },
+      "smooth_continuity": {
+        "mean": 0.001623,
+        "max": 0.008686
+      },
+      "asset": "idle.webp"
+    },
+    "walkRight": {
+      "source_frames": 8,
+      "frames": 64,
+      "columns": 16,
+      "factor": 8,
+      "interpolated_frames": 64,
+      "target_fps": 60.0,
+      "tta": false,
+      "frame_ms": 16.75,
+      "loop": true,
+      "duration_ms": 1072.0,
+      "source_continuity": {
+        "mean": 0.156292,
+        "max": 0.226728
+      },
+      "smooth_continuity": {
+        "mean": 0.026126,
+        "max": 0.045118
+      },
+      "asset": "walkRight.webp"
+    },
+    "walkLeft": {
+      "source_frames": 8,
+      "frames": 64,
+      "columns": 16,
+      "factor": 8,
+      "interpolated_frames": 64,
+      "target_fps": 60.0,
+      "tta": false,
+      "frame_ms": 16.75,
+      "loop": true,
+      "duration_ms": 1072.0,
+      "source_continuity": {
+        "mean": 0.181362,
+        "max": 0.195799
+      },
+      "smooth_continuity": {
+        "mean": 0.034193,
+        "max": 0.042068
+      },
+      "asset": "walkLeft.webp"
+    },
+    "wave": {
+      "source_frames": 4,
+      "frames": 49,
+      "columns": 16,
+      "factor": 16,
+      "interpolated_frames": 49,
+      "target_fps": 60.0,
+      "tta": false,
+      "frame_ms": 16.7347,
+      "loop": false,
+      "duration_ms": 820.0,
+      "source_continuity": {
+        "mean": 0.029253,
+        "max": 0.033079
+      },
+      "smooth_continuity": {
+        "mean": 0.002562,
+        "max": 0.004453
+      },
+      "asset": "wave.webp"
+    },
+    "jump": {
+      "source_frames": 5,
+      "frames": 50,
+      "columns": 16,
+      "factor": 16,
+      "interpolated_frames": 65,
+      "target_fps": 60.0,
+      "tta": false,
+      "frame_ms": 16.5,
+      "loop": false,
+      "duration_ms": 825.0,
+      "source_continuity": {
+        "mean": 0.212124,
+        "max": 0.261946
+      },
+      "smooth_continuity": {
+        "mean": 0.026161,
+        "max": 0.052384
+      },
+      "asset": "jump.webp"
+    },
+    "waiting": {
+      "source_frames": 6,
+      "frames": 96,
+      "columns": 16,
+      "factor": 16,
+      "interpolated_frames": 96,
+      "target_fps": 60.0,
+      "tta": false,
+      "frame_ms": 16.6875,
+      "loop": true,
+      "duration_ms": 1602.0,
+      "source_continuity": {
+        "mean": 0.063504,
+        "max": 0.112983
+      },
+      "smooth_continuity": {
+        "mean": 0.005089,
+        "max": 0.012636
+      },
+      "asset": "waiting.webp"
+    },
+    "thinking": {
+      "source_frames": 6,
+      "frames": 99,
+      "columns": 16,
+      "factor": 32,
+      "interpolated_frames": 192,
+      "target_fps": 60.0,
+      "tta": false,
+      "frame_ms": 16.6667,
+      "loop": true,
+      "duration_ms": 1650.0,
+      "source_continuity": {
+        "mean": 0.073759,
+        "max": 0.104947
+      },
+      "smooth_continuity": {
+        "mean": 0.005546,
+        "max": 0.013257
+      },
+      "asset": "thinking.webp"
+    },
+    "focus": {
+      "source_frames": 6,
+      "frames": 96,
+      "columns": 16,
+      "factor": 16,
+      "interpolated_frames": 96,
+      "target_fps": 60.0,
+      "tta": false,
+      "frame_ms": 16.6875,
+      "loop": true,
+      "duration_ms": 1602.0,
+      "source_continuity": {
+        "mean": 0.051691,
+        "max": 0.075611
+      },
+      "smooth_continuity": {
+        "mean": 0.00431,
+        "max": 0.010624
+      },
+      "asset": "focus.webp"
+    }
+  }
+}

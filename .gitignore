@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.python-deps/
+.downloads/
+.tools/
+.playwright-cli/
+output/
+*.log
+src-tauri/target/
+tools/__pycache__/
+tools/rife/

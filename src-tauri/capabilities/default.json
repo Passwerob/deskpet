@@ -1,0 +1,17 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main-capability",
+  "description": "Permissions for the pet and settings windows",
+  "windows": ["settings", "pet-dog", "pet-cream-dog", "pet-corgi-tuantuan"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-start-dragging",
+    "core:window:allow-show",
+    "core:window:allow-hide",
+    "core:window:allow-set-focus",
+    "core:window:allow-set-position",
+    "core:event:default",
+    "notification:default",
+    "autostart:default"
+  ]
+}
